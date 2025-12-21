@@ -1,8 +1,6 @@
 Grapplin
 ========
 
-(GRAP-lin)
-
 Grapplin is a two player climbing and shedding game that is played with a standard 54 card deck.
 
 ## Concept
@@ -44,10 +42,10 @@ Bombs represent decisive, high-pressure positions that are always higher ranked 
 
 | Bomb | Examples |
 | --- | --- |
-| Quads | 5♠ 5♥ 5♦ 5♣ |
-| Suited run of 4 singles | 7♣ 8♣ 9♣ 10♣ |
+| Quads | ♠5, ♥5, ♦5, ♣️5 |
+| Suited run of 4 singles | ♣7, ♣8, ♣9, ♣10 |
 
-Quads are always higher ranked than a suited run of 4.
+Quads are always higher ranked than a suited run of 4 singles.
 
 ### Rank Order
 
@@ -112,20 +110,20 @@ P1: Plays 6 (Matching opponents 6)
 - Adds matched 6 to pair (6, 6) to form a triplet (6, 6, 6) (Special action)
 - Plays 8, 8, 8 (Higher triplet)
 
-P2: Plays 7, 8, 9, 10 all in hearts suit (Bomb, suited run of 4 singles)
+P2: Plays ♥7, ♥8, ♥9, ♥10 (Bomb, suited run of 4 singles)
 
 P1: Plays J, J, J, J (Higher bomb, quads)
 
-P2: Pass.
+P2: Pass
 
-P1: Leads another combination or bomb and so on.
+P1: Leads another combination or bomb and so on
 
-## Credits
+# Credits
 
 Designer: Jonathan Ratschat
 
 Artist: Jonathan Ratschat
 
-Playtesters: Tanja Simic
+Playtesters: Tanja Simic, Tom Schwitzkowski, Patry Kaczmarek, Nils Ahlers, Matthias Gilch, Bryce Carter
 
-A special thanks to Sean Ross, Shreesh B., and Bryce Carter whose game designs (especially Haggis, Dickory, Crisps, and Phibo) have influenced this design.
+A special thanks to Sean Ross, Shreesh Bhat, and Bryce Carter whose game designs (especially Haggis, Dickory, Crisps, and Phibo) have influenced this design.
