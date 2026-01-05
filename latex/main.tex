@@ -1,0 +1,232 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{ccicons}
+\usepackage{titlesec}
+\usepackage{graphicx}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\setlength{\columnsep}{1.5cm}
+
+\begin{document}
+
+\newsavebox{\titlebox}
+\savebox{\titlebox}{\parbox{\textwidth}{
+\begin{center}
+    \includegraphics[width=0.4\textwidth, trim=0 30 0 30, clip]{grapplin_logo.png}
+\\[0.5em]
+    \large By Jonathan Ratschat\\[1.5em]
+    \small \faUser\ 2 \quad|\quad \faBrain\ Medium \quad|\quad \faClock\ 15--35 min\\[1em]
+    \footnotesize January 5th, 2026
+\end{center}
+}}
+
+\twocolumn[\usebox{\titlebox}\vspace{2em}]
+
+\textit{Grapplin is a two player climbing and shedding game that is played with a standard 54 card deck.}
+
+\section{Concept}
+
+Playing Grapplin feels like a grappling match in which it is all about finding leverage in your opponent's attack. Match one of their cards to control the exchange. Shift what you are countering by adding to their combination, break their structure by removing a card, or strengthen your position by pulling cards from the row and then attack back with full force. Caught in a bad hold? Flip your joker to reverse the rank order. Or catch your opponent off-guard by playing a bomb to create a high-pressure situation. First to shed all cards wins the round. First to three rounds wins.
+
+\section{Setup}
+
+The dealer starts from the defensive position, yielding initial control. If you cannot decide who takes that role, determine the dealer at random.
+
+\begin{itemize}
+    \item Lay one joker face up in front of each player.
+    \item Shuffle the remaining cards and deal 18 cards to each player.
+    \item Put the remaining 16 cards face down on the table to create a draw deck and flip three cards face up so that they form a card row next to the draw deck.
+\end{itemize}
+
+The dealer rotates after each round.
+
+\section{Gameplay}
+
+The game is played over multiple Rounds, each consisting of multiple Turns.
+
+\section{Start of a Round}
+
+The non-dealer starts the round, pressing the first attack. They must play a combination or a bomb.
+
+\subsection{Combinations}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Combination} & \textbf{Examples} \\
+\midrule
+Single & 7 \\
+Pair & 9, 9 \\
+Triple & Q, Q, Q \\
+Run of 2 singles & 7, 8 \\
+Run of 3 singles & 9, 10, J \\
+Run of 4 singles & 3, 4, 5, 6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Bombs}
+
+Bombs represent decisive, high-pressure positions that are always higher ranked than any combination.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Bomb} & \textbf{Examples} \\
+\midrule
+Quads & $\spadesuit$5, $\heartsuit$5, $\diamondsuit$5, $\clubsuit$5 \\
+Suited run of 4 singles & $\clubsuit$7, $\clubsuit$8, $\clubsuit$9, $\clubsuit$10 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Quads are always higher ranked than a suited run of 4 singles.
+
+\subsection{Rank Order}
+
+\begin{tabular}{@{}p{\columnwidth}@{}}
+\toprule
+\textbf{Condition} \\
+\midrule
+Start of the round or when both jokers are face down \\
+\textit{(low) 2, 3, 4, ... , K, A (high)} \\
+\midrule
+When one joker is face down \\
+\textit{(low) A, K, Q, ... , 3, 2 (high)} \\
+\bottomrule
+\end{tabular}
+
+\section{Turns}
+
+Once the opponent has played a combination or a bomb and thereby finished their turn, the player must perform at least one of the following actions:
+
+\bigskip
+
+\noindent\faBolt\quad \textbf{1. Beat attack:}\\[0.3em]
+Play a combination or bomb with a higher rank than the combination or bomb played by your opponent. If the opponent played a combination, your combination must have the same combination type and length or you can play a bomb. Afterwards, the opponent's turn starts.
+
+\bigskip
+\noindent\rule{0.3\columnwidth}{0.2pt}
+\bigskip
+
+\noindent\faEquals\quad \textbf{2. Match one card to perform one special action:}\\[0.3em]
+If the opponent played a combination, you can match one of your own cards that is present in the opponent's combination by showing it to your opponent. Only the rank is relevant for the match, not the suit. You may only match one card per turn, even if multiple cards in the opponent's combination share that rank. Cards in bombs cannot be matched. You can now take one of the below special actions. Afterwards you MUST beat the attack (action 1). If this is not possible, you cannot match one card to perform a special action (action 2).
+\begin{itemize}[leftmargin=1.5em, itemsep=0.5em]
+    \item \textbf{Take one or two cards:} Discard your own matched card. Take one or two cards from the card row into your hand. After you have beaten the opponent's attack (action 1), discard the rightmost card from the row and slide any remaining cards to the right. If the draw deck has cards, refill the card row from the draw deck until three cards are face up. This special action can be used as long as at least one card remains in the card row.
+    \item \textbf{Add one card to the opponent's combination:} Add one card from your hand to the opponent's combination to create a new valid combination or bomb. You may choose to add either your matched card or a different card from your hand. If you add a different card, discard your own matched card.
+    \item \textbf{Remove one card from the opponent's combination:} Remove any one card from the opponent's combination to create a different valid combination. Also, discard your own matched card. This special action is also possible when the opponent leads with a single. In this case, remove the single and discard your own matched card and lead with either a combination or a bomb, after which your opponent's turn starts.
+\end{itemize}
+
+\bigskip
+\noindent\rule{0.3\columnwidth}{0.2pt}
+\bigskip
+
+\noindent\faSync\quad \textbf{3. Reverse rank order:}\\[0.3em]
+Turn your face up joker face down to reverse the rank order from 2-Ace to Ace-2 (see rank order table). Hence, Ace becomes the lowest rank and 2 the highest rank. Afterwards, optionally match one card to perform one special action (action 2). Then you MUST still beat the opponent's attack (action 1). If this is not possible, you cannot reverse the rank order (action 3). The opponent cannot use action 3 to reverse the order back from Ace-2 to 2-Ace until a player has passed and a new combination or bomb has been led. If both players have used action 3 (trackable by both jokers being turned face down), action 3 is not available anymore.
+
+\bigskip
+\noindent\rule{0.3\columnwidth}{0.2pt}
+\bigskip
+
+\noindent\faHandPaper\quad \textbf{4. Pass:}\\[0.3em]
+Discard all played cards to a discard pile. The opponent leads a new turn with a combination or bomb.
+
+\section{Win Round and Score}
+
+The first player to shed all their hand cards gets one point.
+
+\section{Next Round}
+
+If no player has reached three points, play another round. The non-dealer becomes the dealer and prepares the next round as described in the setup section.
+
+\section{Win the Game}
+
+The player who reaches three points wins the game.
+
+\section{Example Turns}
+
+\noindent\textbf{P1:} Leads 4 (Single)
+
+\medskip
+\noindent\textbf{P2:} Plays 4 (Matching opponents 4)
+\begin{itemize}[nosep]
+    \item Chooses to discard opponents 4 (Special action)
+    \item Discards their own 4
+    \item Leads 2, 3, 4 (Run of 3 singles)
+\end{itemize}
+
+\medskip
+\noindent\textbf{P1:} Plays 2 (Matching opponents 2)
+\begin{itemize}[nosep]
+    \item Takes 8 from card row (Special action)
+    \item Discards their own 2
+    \item Plays 3, 4, 5 (Higher run of 3 singles)
+    \item Discards the rightmost card from the row and slides the remaining card to the right. Refills the card row from the draw deck until three cards are face up
+\end{itemize}
+
+\medskip
+\noindent\textbf{P2:} Plays 3 (Matching opponents 3)
+\begin{itemize}[nosep]
+    \item Removes opponents 5 to change run of 3 singles (3, 4, 5) to run of 2 singles (3, 4) (Special action)
+    \item Discards their own 3
+    \item Plays 7, 8 (Higher run of 2 singles)
+\end{itemize}
+
+\medskip
+\noindent\textbf{P1:} Pass
+
+\medskip
+\noindent\textbf{P2:} Leads 6, 6 (Pair)
+
+\medskip
+\noindent\textbf{P1:} Plays 6 (Matching opponents 6)
+\begin{itemize}[nosep]
+    \item Adds matched 6 to pair (6, 6) to form a triplet (6, 6, 6) (Special action)
+    \item Plays 8, 8, 8 (Higher triplet)
+\end{itemize}
+
+\medskip
+\noindent\textbf{P2:} Plays $\heartsuit$7, $\heartsuit$8, $\heartsuit$9, $\heartsuit$10 (Bomb, suited run of 4 singles)
+
+\medskip
+\noindent\textbf{P1:} Plays J, J, J, J (Higher bomb, quads)
+
+\medskip
+\noindent\textbf{P2:} Pass
+
+\medskip
+\noindent\textbf{P1:} Leads another combination or bomb and so on
+
+\section{Credits}
+
+\noindent\textbf{Designer:} Jonathan Ratschat\\
+\textbf{Artist:} Jonathan Ratschat\\
+\textbf{Playtesters:} Tanja Simic, Tom Schwitzkowski, Patry Kaczmarek, Nils Ahlers, Matthias Gilch, Bryce Carter
+
+\bigskip
+\noindent A special thanks to Sean Ross, Shreesh Bhat, and Bryce Carter whose game designs (especially Haggis, Dickory, Crisps, and Phibo) have influenced this design.
+
+\vfill
+\noindent\rule{\columnwidth}{0.4pt}\\[0.5em]
+\noindent\begin{minipage}{\columnwidth}
+\ccby\ \small \textcopyright\ 2025 Jonathan Ratschat. Grapplin is licensed under Creative Commons Attribution 4.0 International. To view a copy of this license, visit \url{https://creativecommons.org/licenses/by/4.0/}
+\end{minipage}
+
+\end{document}
