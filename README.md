@@ -10,3 +10,7 @@ https://boardgamegeek.com/boardgame/460576/grapplin
 This repository contains:
 - The official **rules** (PDF/LaTeX source)
 - **Assets and materials** for playing the game in real life and online
+
+Play Grapplin online: https://virtualtabletop.io/game/grapplin
+
+
