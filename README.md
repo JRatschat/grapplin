@@ -5,6 +5,8 @@ Grapplin is a two-player climbing and shedding game where matching combinations 
 👉 View the game on BoardGameGeek:  
 https://boardgamegeek.com/boardgame/460576/grapplin
 
+Designer Diary: https://boardgamegeek.com/blog/16873/blogpost/181504/first-time-designer-notes-on-grapplin
+
 ## Repository Contents
 
 This repository contains:
